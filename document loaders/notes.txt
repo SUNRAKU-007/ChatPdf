@@ -1,0 +1,21 @@
+Artificial Intelligence and Machine Learning
+
+Artificial Intelligence (AI) is a branch of computer science that focuses on creating machines and software capable of performing tasks that typically require human intelligence. These tasks include problem-solving, understanding natural language, recognizing images, and making decisions.
+
+Machine Learning (ML) is a subset of Artificial Intelligence that enables computers to learn patterns from data and make predictions without being explicitly programmed for every individual task. Machine learning algorithms improve their performance by identifying relationships in training data.
+
+Deep Learning is a subset of Machine Learning that uses artificial neural networks with multiple layers to learn complex patterns. It is widely used in applications such as image recognition, speech processing, autonomous vehicles, and natural language processing.
+
+Natural Language Processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language. Applications of NLP include chatbots, language translation, sentiment analysis, text summarization, and virtual assistants.
+
+Retrieval-Augmented Generation (RAG) is an approach that combines information retrieval with large language models. Instead of relying exclusively on information learned during training, a RAG system retrieves relevant information from external documents and provides that information to a language model as context.
+
+A typical RAG pipeline consists of several steps. First, documents are loaded from sources such as PDFs, text files, and websites. Next, the documents are divided into smaller pieces called chunks. An embedding model converts these chunks into numerical vectors that represent their semantic meaning. These vectors are stored in a vector database, such as ChromaDB.
+
+When a user asks a question, the system converts the question into an embedding and searches the vector database for relevant chunks. The retrieved information is then provided to a large language model, which generates an answer based on the available context.
+
+RAG offers several advantages. It allows language models to access information that was not included in their original training data, supports document-based question answering, and can provide references to the sources used to generate an answer. Updating the underlying documents can also make new information available without retraining the entire language model.
+
+However, RAG systems have limitations. If the retrieval process selects irrelevant information, the generated answer may be inaccurate. Poor document chunking, low-quality embeddings, and incomplete source documents can also reduce performance. Therefore, a reliable RAG system requires effective document processing, accurate retrieval, and careful evaluation of generated responses.
+
+RAG is useful in applications such as customer support, research assistants, educational chatbots, enterprise knowledge management, and document analysis.
